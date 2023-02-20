@@ -7,23 +7,16 @@
  */
 int main(void)
 {
-	int num1, num2;
+	int num;
 
-	for (num1 = 0; num1 < 10; num1++)
+	for (num = 48; num < 58; num++)
 	{
-		for (num2 = num1; num2 < 10; num2++)
-		{
-			if (num1 != num2)
-			{
-				putchar(num1 + '0');
-				putchar(num2 + '0');
+		putchar(num);
 
-				if (num1 != 8 || num2 != 9)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+		if (num != 57)
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
